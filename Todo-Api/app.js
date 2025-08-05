@@ -1,5 +1,4 @@
 const express = require("express");
-const { todo } = require("node:test");
 const app = express();
 const PORT = 3000;
 
@@ -15,6 +14,7 @@ app.get("/todos", (req, res) => {
     
     res.status(200).json(todos);
 });
+
 
 app.post("/todos", (req, res) => {
 
